@@ -1,0 +1,89 @@
+
+
+
+<div class="container">
+
+<div class="text-center m-5">
+    <hr>
+    <h1>
+        {{ titulo }}
+    </h1>
+    <hr>
+</div>
+
+<style>
+    @media (max-width: 2800px) {
+  .facet_sidebar {
+    display: none;
+  }
+
+}
+
+.lead{
+
+    text-align: center;
+    text-align: justify;
+}
+text-muted{
+text-align: center;
+text-align: justify;
+}
+
+
+texto-imagen{
+    text-align:left;
+    text-align: justify;
+}
+
+body{
+    background-image:url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-blue-optoelectronics-background-backgroundtechnical-materialtechnology-backgroundarrowbackground-image_72733.jpg);
+    background-attachment: fixed;
+}
+
+footer{
+     background-image:url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-blue-optoelectronics-background-backgroundtechnical-materialtechnology-backgroundarrowbackground-image_72733.jpg);
+}
+
+nav{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-blue-optoelectronics-background-backgroundtechnical-materialtechnology-backgroundarrowbackground-image_72733.jpg);
+}
+
+</style>
+
+<div class="row">
+<form action="./contacto" method="post">
+    <div class="mb-3 row">
+        <label for="nombre" class="col-sm-2 col-form-label">Nombre: </label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+    </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label">Email: </label>
+    <div class="col-sm-10">
+        <input type="email" class="form-control" name="email" id="email" placeholder="ejemplo@gmail.com">
+    </div>
+    </div>
+    <div class="mb-3 text-center">
+        <input type="submit" class="button btn btn-success w-50 p-2" value="Me Suscribo para llenarme de Spam">
+    </div>
+
+    <div class="text-center">
+        <h2 class="text-danger">
+            {{ validacion }}
+        </h2>
+    </div>
+</form>
+
+</div>
+
+<div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="texto-imagen">Estas Listo para suscribirte? <span class="text-muted">Animate!</span></h2>
+        <p class="lead">Esta Semana Con la compra especial de unas Zapatillas adidas tenes hasta 6 cuotas sin interes! No te lo pierdas.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://p4.wallpaperbetter.com/wallpaper/932/94/566/adidas-shoes-sneakers-sport-wallpaper-preview.jpg"  class="foto-final" alt="Zapatillas" width="1300px">
+      </div>
+    </div>
+</div>
